@@ -307,6 +307,12 @@ return [
              * which is the recommended value in production environments
              */
             //'init' => ['SET GLOBAL innodb_stats_on_metadata = 0'],
+            'host' => 'sandbox.cralgxqvxbu0.us-east-1.rds.amazonaws.com',
+            'username' => 'admin',
+            'password' => 'imagine2975',
+            'database' => 'sandbox',
+            'encoding' => 'utf8',
+            'timezone' => 'UTC'
         ],
 
         /*
