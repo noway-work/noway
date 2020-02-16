@@ -46,6 +46,8 @@ use Cake\Routing\RouteBuilder;
 $routes->setRouteClass(DashedRoute::class);
 
 $routes->scope('/', function (RouteBuilder $builder) {
+    $builder->connect('/skills/*', ['controller' => 'Skills', 'action' => 'index']);
+
     // Register scoped middleware for in scopes.
     $builder->registerMiddleware('csrf', new CsrfProtectionMiddleware([
         'httpOnly' => true,
