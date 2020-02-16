@@ -270,10 +270,12 @@ return [
          * in app_local.php depending on the applications needs.
          */
         'default' => [
-            'className' => Connection::class,
-            'driver' => Mysql::class,
+            //'className' => Connection::class,
+            'className' => 'Cake\Database\Connection',
+            //'driver' => Mysql::class,
+            'driver' => 'Cake\Database\Driver\Mysql',
             'persistent' => false,
-            'timezone' => 'UTC',
+            //'timezone' => 'UTC',
 
             /**
              * For MariaDB/MySQL the internal default changed from utf8 to utf8mb4, aka full utf-8 support, in CakePHP 3.6
