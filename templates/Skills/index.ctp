@@ -1,4 +1,4 @@
-<!-- File: src/View/Skills/index.ctp -->
+<!-- File: src/templates/Skills/index.ctp -->
 
 <h1>Skills</h1>
 <table>
